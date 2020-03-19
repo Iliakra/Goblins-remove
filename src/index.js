@@ -1,3 +1,4 @@
+
 const newImg = document.createElement('img');
 newImg.classList.add('goblin-image');
 newImg.setAttribute('src', './image/goblin.png');
@@ -10,9 +11,10 @@ function getRandomInRange(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+
 function removeGoblin() {
-  const i = getRandomInRange(0, 16);
-  const parentElement = positionsArray[i];
+  let randomNum = getRandomInRange(0, 16);
+  const parentElement = positionsArray[randomNum];
   if (!parentElement.contains(goblinImage)) {
     parentElement.appendChild(newImg);
     images = [...images];
