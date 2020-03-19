@@ -13,7 +13,7 @@ function getRandomInRange(min, max) {
 
 
 function removeGoblin() {
-  let randomNum = getRandomInRange(0, 16);
+  const randomNum = getRandomInRange(0, 16);
   const parentElement = positionsArray[randomNum];
   if (!parentElement.contains(goblinImage)) {
     parentElement.appendChild(newImg);
