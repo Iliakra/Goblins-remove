@@ -1,7 +1,7 @@
 
 const newImg = document.createElement('img');
 newImg.classList.add('goblin-image');
-newImg.setAttribute('src', './image/goblin.png');
+newImg.setAttribute('src', './src/image/goblin.png');
 
 const positions = document.getElementsByClassName('field');
 let images = document.getElementsByClassName('goblin-image');
